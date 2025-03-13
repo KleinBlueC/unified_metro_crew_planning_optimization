@@ -1,0 +1,82 @@
+{   
+    "save_data": true,
+    "system":{
+        "lines": [1, 4, 5, 6, 14],
+        "Tw": 1140,
+        "W": 3,
+        "alpha": 540,
+        "h": 120
+    },
+    
+    "schedule":{
+        "real_case": true,
+        "tao": 90,
+        "D": 1,
+        "add_rand_real": true,
+        "rand_range_real": 1,
+        "consider_weekends": true
+
+    },
+
+    "work": {
+        "delta": 10,
+        "eps1": 20,
+        "eps2": 20,
+        "beta": 10,
+
+        "tr": 5,
+        
+        "n_si": 2,
+        "n_t": 10,
+        
+        "gb": 120,
+        "ge": 120,
+        "g": 45,
+        "meal_arc_interval": 1,
+
+        "type_cost": {
+            "s": 0,
+            "e": 0,
+            "si": 0.2,
+            "so": 0.2,
+            "w": 1,
+            "t": 0.2,
+            "r": 0.2,
+            "m": 0.2,
+            "a": 0.2,
+            "f": 0,
+            "n":0
+        },
+
+        "pi": 450,
+        "pi_ratio": 4,
+        "tpi": 0
+    },
+
+    
+    "data_paths": {
+        "train_schedules":"code_repository/database/beijing_train_schedule_settings.json",
+        "transfer_settings": "code_repository/database/beijing_line_transfer_settings.json"
+    },
+
+
+    "crew":{
+        "num_of_drivers": 500,
+        "generate_method": "uniform",
+        "preference_settings": {
+            "cw_max": 100,
+            "prefered_depot_cnt": 2,
+            "lambda_o": 50
+        },
+        "double_ratio": 0.4,
+        "master_all": false
+    },
+    
+    "solver":{
+        "max_iter": 200,
+        "early_stop": [100, 50],
+        "parallel": false,
+        "Q": 3
+    }
+    
+}
